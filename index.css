@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-color-c01: #f5f5f5;
+  --primary-color-c02: #f0f0f0;
+  --primary-color-c03: #e0e0e0;
+  --primary-color-c04: #cccccc;
+  --primary-color-c06: #a3a3a3;
+  --primary-color-c07: #8f8f8f;
+  --primary-color-c10: #525252;
+  --primary-color-c13: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  color: var(--primary-color-c13);
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  padding: 2rem 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header nav .header-menu {
+  display: flex;
+  gap: 2.3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header nav .header-menu .header-menu-item {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.header nav .header-menu .header-menu-item a {
+  padding: 0.5rem 0.9rem;
+  border-radius: 3px;
+  display: block;
+}
+
+.header nav .header-menu .header-menu-item:hover::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  content: "";
+  border-radius: 3px;
+  background: linear-gradient(to right, #b629f8, #800add);
+}
+
+.header .header-title a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: "Playfair Display";
+}
+
+@media (max-width: 930px) {
+  .header {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .header .header-menu li a {
+    background-color: #f5f5f5;
+  }
+}
+@media (max-width: 497px) {
+  .header .header-title a {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+}
+.introducao {
+  display: grid;
+  max-width: 200rem;
+  padding: 4rem 4rem;
+  gap: 6rem;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.introducao .introducao-title {
+  font-size: 4.5rem;
+  margin-bottom: 30px;
+  font-family: "Playfair Display";
+  position: relative;
+}
+
+.introducao .introducao-title::before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 130px;
+  z-index: -1;
+  top: -1px;
+  left: -45px;
+  background: url("../../../assets/icons/detalhe-titulo.svg") no-repeat center;
+}
+
+.introducao .introducao-title .introducao-descricao {
+  font-size: 1.5rem;
+  color: var(--primary-color-c10);
+}/*# sourceMappingURL=index.css.map */
