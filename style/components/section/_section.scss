@@ -1,0 +1,85 @@
+.experiencia {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 2fr;
+  padding: 2.5rem 1.25rem;
+  gap: 100px;
+
+  & .subtitulo {
+    font-size: 8rem;
+    font-family: "Playfair Display";
+    color: var(--primary-color-c03);
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.1;
+    max-width: 5ch;
+    word-break: break-all;
+  }
+
+  & .experiencia-texto {
+    max-width: 40ch;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    line-height: 1.3;
+    color: var(--primary-color-c10);
+
+    & strong {
+      color: var(--primary-color-c13);
+    }
+  }
+
+  & .empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.3rem;
+    background-color: var(--primary-color-c01);
+    margin-bottom: 1.3rem;
+    border-radius: 5px;
+    gap: 10px 20px;
+    position: relative;
+
+    & .empresa-texto {
+      color: var(--primary-color-c10);
+      font-size: 0.875rem;
+      line-height: 1.4;
+    }
+
+    & .empresa-habilidades {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-content: start;
+
+      & li {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        background-color: #fff;
+      }
+    }
+
+    & .empresa-titulo {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    &::before {
+      position: absolute;
+      top: 1.3rem;
+      left: -3px;
+      content: "";
+      width: 3px;
+      height: 1.3rem;
+      display: inline-block;
+      background: linear-gradient(to bottom, #b629f8, #800add);
+    }
+
+    & .empresa-ano {
+      position: absolute;
+      top: 1.5rem;
+      left: -50px;
+      font-size: 0.875rem;
+      color: var(--primary-color-c10);
+    }
+  }
+}
