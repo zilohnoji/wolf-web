@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   border: none;
-  color: var(--primary-color-c13);
   font-family: "Fira Sans", Arial, Helvetica, sans-serif;
 }
 
@@ -17,5 +16,6 @@ ul {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }

@@ -83,3 +83,38 @@
     }
   }
 }
+
+@media (max-width: 1099px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    & .subtitulo {
+      font-size: 3rem;
+      max-width: initial;
+      color: var(--primary-color-c13);
+      text-transform: capitalize;
+    }
+
+    & .experiencia-texto {
+      font-size: 1.25rem;
+    }
+
+    & .empresa {
+      & .empresa-ano {
+        position: initial;
+        order: 1;
+        text-align: left;
+        width: initial;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .experiencia {
+    & .empresa {
+      grid-template-columns: 1fr;
+    }
+  }
+}

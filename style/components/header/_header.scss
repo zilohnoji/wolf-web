@@ -18,6 +18,7 @@
       position: relative;
 
       & a {
+        color: var(--primary-color-c13);
         padding: 0.5rem 0.9rem;
         border-radius: 3px;
         display: block;
@@ -39,6 +40,7 @@
 
   & .header-title {
     & a {
+      color: var(--primary-color-c13);
       text-decoration: none;
       font-size: 3rem;
       font-family: "Playfair Display";
@@ -46,7 +48,7 @@
   }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 800px) {
   .header {
     gap: 2rem;
     flex-direction: column;
